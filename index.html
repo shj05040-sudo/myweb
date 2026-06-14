@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jung Suhyeon · Portfolio</title>
+  <meta name="description" content="미디어/브랜딩/웹 퍼블리싱 포트폴리오" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- progress / cursor / gate -->
+  <div class="progress" aria-hidden="true">
+    <div class="bar" id="scrollBar"></div>
+  </div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+  <!-- Gate -->
+  <div id="gate" class="gate" aria-hidden="true">
+    <video class="gate-bg" src="./images/gate_bg.mp4" autoplay muted loop playsinline></video>
+    <div class="gate-inner gate-hero" role="dialog" aria-modal="true" aria-labelledby="gate-title"
+      aria-describedby="gate-desc">
+      <h1 id="gate-title" class="gate-heading">
+        <span class="line l1">Jung Suhyeon</span>
+        <span class="line l2">PORTFOLIO SITE</span>
+      </h1>
+      <p id="gate-desc" class="sr-only">이미지를 1초간 길게 누르면 입장합니다</p>
+      <button class="gate-btn gate-image" type="button" aria-label="이미지를 1초간 누르면 입장">
+        <img src="./images/enter-thumb.png" alt="">
+        <span class="hold-hint">HOLD 1s TO ENTER</span>
+      </button>
+      <a href="#" class="gate-skip" data-gate-skip>바로 입장</a>
+    </div>
+  </div>
+
+  <a class="skip" href="#main">본문 바로가기</a>
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Jung Suhyeon · Portfolio</h1>
+      <nav class="gnb" aria-label="Global">
+        <a href="index.html#profile">Profile</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#media">Media</a>
+        <a class="nav-marketing" href="marketing.html">Marketing</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" aria-pressed="true" title="Toggle day/night">🌙</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section dark">
+      <div class="hero-decor" aria-hidden="true">
+        <img class="deco clapper spin-slow" src="./images/clapper.png" alt="" style="animation-delay:0s">
+        <img class="deco cube float-slow" src="./images/cube.png" alt="" style="animation-delay:1.2s">
+        <img class="deco chain spin-fast" src="./images/chain.png" alt="" style="animation-delay:.6s">
+        <img class="deco donut float-fast" src="./images/donut.png" alt="" style="animation-delay:2.1s">
+        <img class="deco star spin-mid" src="./images/star.png" alt="" style="animation-delay:1.8s">
+        <img class="deco bolt float-mid" src="./images/bolt.png" alt="" style="animation-delay:.9s">
+      </div>
+
+      <div class="container hero-inner">
+        <h2 class="hero-title">
+          <span class="line">DESIGNING <span id="swap" class="accent-rotate">VALUE</span></span>
+          <span id="heroAnchor" class="hero-anchor" aria-hidden="true"></span>
+          <span class="line">NOT JUST VISUALS</span>
+        </h2>
+
+        <div id="heroVidWrap" class="hero-video under" aria-hidden="true">
+          <video id="heroVideo" src="./images/selfiintro1.mp4" playsinline preload="metadata" loop></video>
+        </div>
+
+        <p class="hero-sub">과정에서 <span class="chip blue">착실함</span>과, 결과에서 <span class="chip yellow">완성도</span>를 타협하지 않는 콘텐츠 기획자가 되겠습니다.</p>
+        <div class="chev" aria-hidden="true">⌄</div>
+      </div>
+    </section>
+
+    <section class="video-stage" id="videoStage" aria-hidden="true"></section>
+
+    <!-- Profile -->
+    <section class="section intro" id="profile">
+      <div class="container">
+        <div class="intro-wrap" data-intro>
+          <article class="intro-page intro-skill">
+            <div class="intro-grid">
+              <figure class="portrait"><img src="./images/portrait.png" alt="프로필 일러스트" /><span class="dot"
+                  aria-hidden="true"></span></figure>
+              <div class="intro-info">
+                <h3 class="under">Tool Skills</h3>
+                <div class="cols">
+                  <div class="col">
+                    <h4>{ Design Tools }</h4>
+                    <ul class="list">
+                      <li>Illustrator</li>
+                      <li>Photoshop</li>
+                      <li>Indesign</li>
+                      <li>Figma</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h4>{ Coding Tools }</h4>
+                    <ul class="list">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>VS Code</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="badges" data-cursor="view"><span class="badge">Ps</span><span class="badge">Ai</span><span
+                    class="badge">Id</span><span class="badge">Fg</span><span class="badge">H5</span><span
+                    class="badge">C3</span><span class="badge">JS</span><span class="badge">VSz</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="intro-page intro-about">
+            <div class="intro-grid">
+              <figure class="portrait small"><img src="./images/portrait.jpg" alt="프로필" /><span class="dot"
+                  aria-hidden="true"></span></figure>
+              <div class="intro-info">
+                <h3 class="under">About</h3>
+                <p class="lead">콘텐츠 기획자 | UXUI 디자이너 정수현입니다.</p>
+                <ul class="kv">
+                  <li><b>Profile</b> 2001.05.04 · shj05040@gmail.com</li>
+                  <li><b>Education</b> UX/UI 반응형 퍼블리싱, </li>
+                  <li><b>License</b> 웹디자인기능사 필기 · 컴활2급</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="intro-pager" role="tablist" aria-label="Profile pages">
+          <button class="pager-btn" role="tab" aria-selected="true" data-intro-dot="0">Page 1</button>
+          <button class="pager-btn" role="tab" aria-selected="false" data-intro-dot="1">Page 2</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="block-head">
+          <h3 class="block-title">WORK</h3><span class="pill angle">LATEST</span>
+        </header>
+        
+        <h2>아래 work페이지와 마케팅 페이지에서 접속 문제가 발생할 시 아래의 작업물 프로세스 링크들을 참고 부탁드립니다</h2>
+        <a href="https://drive.google.com/file/d/1oHW_jNIVrkEr7fBy5uei3BeO6T8uABQ2/view?usp=sharing"><p>✅ 콘서트 물품 대여 플랫폼 스탠딩백 링크</p></a>
+        <a href="https://drive.google.com/file/d/15fpWhsN3h4WgAaIDLDdAYM08KNkJS4Zi/view?usp=sharing"><p>✅ 대구단편영화제 diff 프로세스</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1MtzN8AHvXaT8tRI4Q1xAB76TPA4MSiLZ/view?usp=sharing"><p>✅ 콘텐츠투어리즘 일본 답사 보고서</p></a>
+        <a href="https://drive.google.com/file/d/1GzxlQMqfCwtUEIUBYATFx3tcgORYgKHA/view?usp=sharing"><p>✅ 재미있게 요리를! 요리 레시피 어플 푸두</p></a>
+        <!-- <a href="https://drive.google.com/file/d/1-z4mT4GyMsbNW_uRUQK6XQcDyBGPaInr/view?usp=sharing"></a>
+        <br> -->
+
+        <nav class="work-nav" aria-label="Work sub-navigation" data-cursor="go">
+          <a href="#work-app" class="wnav is-active">App</a>
+          <a href="#work-web" class="wnav">Web</a>
+          <a href="#work-editorial" class="wnav">Detail</a>
+          <a href="#work-card" class="wnav">Card</a>
+        </nav>
+
+        <h4 id="work-app" class="section-mini anchor">App</h4>
+        <div class="app-list app-vertical" data-cursor="view">
+          <article class="app-item app-flex app-first">
+            <div class="mock left"><img src="./images/ph_09.png" alt="앱 목업"></div>
+            <div class="app-copy right">
+              <h5>푸두(Foodo)</h5>
+              <p>요리를 게임처럼</p>
+              <div class="pdf-view">
+                <iframe src="./images/process_foodo.pdf#page=1&zoom=page-width" title="푸두 제작 프로세스 PDF"
+                  loading="lazy"></iframe>
+                <a class="pdf-fallback" href="./images/process_foodo.pdf" target="_blank" rel="noopener">PDF가 보이지 않으면 눌러서
+                  열기</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-item app-flex app-second alt">
+            <div class="app-copy left">
+              <h5>핀포(PinPaw)</h5>
+              <p>실종 반려동물 동네기반 알림 추적어플</p>
+              <div class="pdf-view">
+                <iframe src="./images/process_pinpaw.pdf#page=1&zoom=page-width" title="핀포 제작 프로세스 PDF"
+                  loading="lazy"></iframe>
+                <a class="pdf-fallback" href="./images/process_pinpaw.pdf" target="_blank" rel="noopener">PDF가 보이지 않으면 눌러서
+                  열기</a>
+              </div>
+            </div>
+            <!-- <div class="mock right"><img src="./images/ph_09.jpg" alt="앱 목업"></div> -->
+          </article>
+        </div>
+        <h4 id="work-web" class="section-mini anchor">Web</h4>
+        <div class="web-slider" data-web-slider>
+          <button class="ws-prev" aria-label="이전">‹</button>
+          <div class="ws-track">
+            <div class="ws-slide">
+              <img src="./images/ph_07.png" alt="Campaign Page">
+              <h6>KFC</h6>
+              <p class="sub">클론코딩</p>
+              <div class="web-tags">
+                <ul class="tags hash">
+                  <!-- <li>#리디자인</li>
+                  <li>#클론코딩</li>
+                  <li>#반응형</li>
+                  <li>#접근성</li> -->
+                </ul>
+              </div>
+              <div class="web-actions">
+                <a class="btn before" href="https://example.com/brand-v1" target="_blank" rel="noopener">원사이트</a>
+                <a class="btn after" href="https://example.com/brand-v2" target="_blank" rel="noopener">클론코딩</a>
+              </div>
+            </div>
+            <div class="ws-slide"><img src="./images/ph_66.png" alt="Brand Microsite">
+              <h6>standing bag</h6>
+              <p class="sub">콘서트 물품 대여 서비스 플랫폼 #브랜딩 #반응형</p>
+              <div class="web-tags">
+                <ul class="tags hash">
+                  <!-- <li>#리디자인</li>
+                  <li>#클론코딩</li> -->
+                  <!-- <li>#반응형</li>
+                  <li>#브랜딩</li> -->
+                </ul>
+              </div>
+              <div class="web-actions">
+                <a class="btn before" href="https://drive.google.com/file/d/1oHW_jNIVrkEr7fBy5uei3BeO6T8uABQ2/view?usp=sharing" target="_blank" rel="noopener">프로세스</a>
+                <a class="btn after" href="https://example.com/brand-v2" target="_blank" rel="noopener">사이트</a>
+              </div>
+            </div>
+            <div class="ws-slide"><img src="./images/ph_00002.png" alt="Auction Redesign">
+              <h6>대구단편영화제</h6>
+              <p class="sub">#리디자인 #반응형</p>
+              <div class="web-tags">
+                <ul class="tags hash">
+                  <!-- <li>#리디자인</li>
+                  <li>#클론코딩</li>
+                  <li>#반응형</li>
+                  <li>#접근성</li> -->
+                </ul>
+              </div>
+              <div class="web-actions">
+                <a class="btn before" href="https://example.com/brand-v1" target="_blank" rel="noopener">프로세스</a>
+                <a class="btn after" href="https://example.com/brand-v2" target="_blank" rel="noopener">사이트</a>
+              </div>
+            </div>
+            <div class="ws-slide"><img src="./images/ph_08.png" alt="E-commerce UI">
+              <h6>하이네켄</h6>
+              <p class="sub">리디자인</p>
+              <div class="web-tags">
+                <ul class="tags hash">
+                  <!-- <li>#리디자인</li>
+                  <li>#클론코딩</li>
+                  <li>#반응형</li>
+                  <li>#접근성</li> -->
+                </ul>
+              </div>
+              <div class="web-actions">
+                <a class="btn before" href="https://example.com/brand-v1" target="_blank" rel="noopener">프로세스</a>
+                <a class="btn after" href="https://example.com/brand-v2" target="_blank" rel="noopener">사이트</a>
+              </div>
+            </div>
+            <div class="ws-slide"><img src="./images/ph_11.png" alt="Portfolio Revamp">
+              <h6>준비중</h6>
+              <p class="sub">abc</p>
+              <div class="web-tags">
+                <ul class="tags hash">
+                  <!-- <li>#리디자인</li>
+                  <li>#클론코딩</li>
+                  <li>#반응형</li>
+                  <li>#인터랙션</li> -->
+                </ul>
+              </div>
+              <div class="web-actions">
+                <a class="btn before" href="https://example.com/brand-v1" target="_blank" rel="noopener">a</a>
+                <a class="btn after" href="https://example.com/brand-v2" target="_blank" rel="noopener">b</a>
+              </div>
+            </div>
+          </div>
+          <button class="ws-next" aria-label="다음">›</button>
+        </div>
+
+        <h4 id="work-editorial" class="section-mini anchor">Detail</h4>
+        <ul class="cards sm two-line" data-cursor="view">
+          <li class="card"><img src="./images/ph_05.png" alt="">
+            <h6>데모니아 신발 상세페이지</h6>
+            <p class="sub">제품 정리.</p>
+          </li>
+          <li class="card"><img src="./images/ph_06.png" alt="">
+            <h6>템버린즈 향수 상세페이지</h6>
+            <p class="sub">행사 안내용.</p>
+          </li>
+          <li class="card"><img src="./images/ph_11.png" alt="">
+            <h6>Poster</h6>
+            <p class="sub">타이포그래피 중심 포스터.</p>
+          </li>
+        </ul>
+
+        <h4 id="work-card" class="section-mini anchor">Card News</h4>
+        <ul class="cards sm two-line" data-cursor="view">
+          <li class="card"><img src="./images/ph_03.jpg" alt="">
+            <h6>Service Intro</h6>
+            <p class="sub">행사</p>
+          </li>
+          <li class="card"><img src="./images/ph_11.png" alt="">
+            <h6>Event Promo</h6>
+            <p class="sub">준비중</p>
+          </li>
+          <li class="card"><img src="./images/ph_11.png" alt="">
+            <h6>How-To</h6>
+            <p class="sub">준비중</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Media -->
+    <section id="media" class="section">
+      <div class="container">
+        <header class="block-head">
+          <h3 class="block-title">MEDIA</h3><span class="pill angle">REEL</span>
+        </header>
+        <nav class="media-nav" aria-label="Media sub-navigation" data-cursor="go">
+          <a href="#media-film" class="mnav is-active">Film</a>
+          <a href="#media-picture" class="mnav">Picture</a>
+        </nav>
+
+        <h4 id="media-film" class="section-mini anchor">Film</h4>
+        <section class="film-wrap">
+          <div class="film-video">
+  <a class="film-youtube-link" href="https://www.youtube.com/watch?v=v8W1IznT9i4" target="_blank" rel="noopener">
+    <img src="images/still_01.png" alt="단편영화 희로 영상 썸네일">
+    <span class="youtube-play">▶</span>
+    <span class="youtube-copy">
+      <b>희로 영상 보기</b>
+      <small>YouTube에서 새 창으로 열기</small>
+    </span>
+  </a>
+</div>
+
+          <h6 class="section-note">STILL CUTS</h6>
+          <ul class="film-stills">
+            <li><img src="./images/still_01.png" alt="스틸컷 1"></li>
+            <li><img src="./images/still_02.png" alt="스틸컷 2"></li>
+            <li><img src="./images/still_03.png" alt="스틸컷 3"></li>
+          </ul>
+
+          <div class="film-info">
+            <h5 class="film-title">희로</h5>
+            <ul class="kv">
+              <li><b>Year</b> 2025</li>
+              <li><b>Genre</b> 코믹스릴러, 청춘느와르</li>
+              <li><b>Length</b> 19min</li>
+              <li><b>Synopsis</b> 고요한 만화방이 하루의 전부인 고3 희로는 단골 사장과 오타쿠 형과 어울리며 소소한 행복을 누린다. 어느 밤, 만화방에서 수상한 거래를 목격한 그는
+                만화방의 지하실에서 믿지 못할 사건과 마주하게 되는데...</li>
+            </ul>
+          </div>
+
+          <div class="film-crew">
+            <aside class="crew-left">
+              <figure class="me"><img src="./images/crewme.jpg" alt="정수현"></figure>
+              <div class="role">
+                <h3>My Role</h3>
+                <p><b>프리프로덕션 메인 PD</b></p>
+                <p>프로듀싱 | 로케이션 헌팅</p>
+                <p>예산 제작스케줄 관리</p>
+                <p>미술, 스토리보드 참여</p>
+              </div>
+            </aside>
+            <div class="crew-board">
+              <div class="board">
+                <img src="./images/crew_01.JPG" alt="현장 사진 1">
+                <img src="./images/crew_02.JPG" alt="현장 사진 2">
+                <img src="./images/crew_03.jpg" alt="현장 사진 3">
+                <img src="./images/crew_04.jpg" alt="현장 사진 4">
+                <img src="./images/crew_05.jpg" alt="현장 사진 5">
+                <img src="./images/crew_06.jpg" alt="현장 사진 6">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h4 id="media-picture" class="section-mini anchor">Picture</h4>
+        <ul class="picture-grid grid-5" data-cursor="view">
+          <li><button class="pic" type="button" data-label="현장르포"
+              data-slides="images/1-thumb.jpg,images/1-2.jpg,images/1-3.jpg,images/1-4.jpg,images/1-5.jpg,images/1-6.jpg,images/1-7.jpg,images/1-8.jpg"><img
+                src="./images/1-thumb.jpg" alt="사진 세트 1"></button></li>
+          <li><button class="pic" type="button" data-label="포토저널"
+              data-slides="images/2-thumb.jpg,images/2-2.jpg,images/2-3.jpg,images/2-4.jpg,images/2-5.jpg,images/2-6.jpg"><img
+                src="./images/2-thumb.jpg" alt="사진 세트 2"></button></li>
+          <li><button class="pic" type="button" data-label="공모전"
+              data-slides="images/3-thumb.PNG,images/3-2.JPG,images/3-3.jpg,images/3-4.jpg"><img
+                src="./images/3-thumb.PNG" alt="사진 세트 3"></button></li>
+          <li><button class="pic" type="button" data-label="개인촬영"
+              data-slides="images/4-1.jpg,images/4-2.jpg,images/4-3.jpg,images/4-5.jpg,images/4-6.jpg,images/4-7.jpg,images/4-8.jpg,images/4-9.jpg"><img
+                src="./images/4-thumb.jpg" alt="사진 세트 4"></button></li>
+          <li><button class="pic" type="button" data-label="답사"
+              data-slides="images/5-thumb.jpg,images/5-2.jpg,images/5-3.jpg,images/5-3.jpg,images/5-4.jpg,images/5-5.jpg"><img
+                src="./images/5-thumb.jpg" alt="사진 세트 5"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section">
+      <div class="container">
+        <header class="block-head">
+          <h3 class="block-title">ACTIVITIES</h3><span class="pill angle">LOG</span>
+        </header>
+        <ol class="timeline" data-cursor="view">
+          <li><time>2025</time><span>그린 컴퓨터 UXUI 퍼블리싱 교육 수료</span></li>
+          <li><time>2025</time><span>한국마케팅협회 서포터즈 차세대마케팅리더 21기 | 소비자 평가 칼럼 기고</span></li>
+          <li><time>2024</time><span>대구영상미디어센터 단편영화 제작워크숍 수료</span></li>
+          <li><time>2024</time><span>지역재생 크리에이팅 지원사업 참여</span></li>
+          <li><time>2024</time><span>대구치맥페스티벌 봉사 서포터즈</span></li>
+          <li><time>2024</time><span>영남대학교 재학생 학부 조교 프로그램 참여 (FSM 장학생)</span></li>
+          <li><time>2022</time><span>영상제작동아리 ‘ENG’</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="block-head">
+          <h3 class="block-title">ABOUT</h3><span class="pill angle">ME</span>
+        </header>
+        <div class="about-grid">
+          <p>안녕하세요, 정수현입니다.</p>
+          <!-- <ul class="tags">
+            <li>Figma</li>
+            <li>HTML/CSS</li>
+            <li>JS</li>
+            <li>After Effects</li>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAs -->
+    <section class="section ctas">
+      <div class="container tiles" data-cursor="go">
+        <a class="tile yellow" href="#contact"><span class="tile-caption">프로젝트 문의</span><span
+            class="tile-title">CONTACT</span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+        <a class="tile blue" href="#resume"><span class="tile-caption">이력서 PDF</span><span
+            class="tile-title">RESUME</span><span class="tile-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer dark">
+      <div class="container footer-inner">
+        <div class="left">
+          <p class="small">DESIGNING VALUE, NOT JUST VISUALS</p>
+        </div>
+        <div class="right">
+          <address><b>Contact</b><a href="mailto:hello@example.com">shj05040@gmail.com</a><span>010-3315-4457</span>
+          </address>
+        </div>
+      </div>
+      <div class="last">
+        <p>Jung Suhyeon · Portfolio</p>
+      </div>
+    </footer>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="track"><span>APP • WEB • detail • MEDIA • ACTIVITIES • BRANDING • </span><span>APP • WEB • detail •
+          MEDIA • ACTIVITIES • BRANDING • </span><span>CREATING APP • WEB • detail • MEDIA • ACTIVITIES • BRANDING •
+        </span></div>
+    </div>
+    <div id="resume" class="sr-only">Resume Anchor</div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="사진 슬라이더">
+    <button class="lb-close" type="button" aria-label="닫기">×</button>
+    <button class="lb-prev" type="button" aria-label="이전">‹</button>
+    <div class="lb-stage"><img alt="선택된 사진" /></div>
+    <button class="lb-next" type="button" aria-label="다음">›</button>
+  </div>
+</body>
+
+<!-- Floating controls -->
+<div class="float-controls" aria-hidden="false">
+  <button id="btnTop" class="fab go-top" aria-label="맨 위로"><span class="chev-top" aria-hidden="true"></span></button>
+</div>
+
+</html>
